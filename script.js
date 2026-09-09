@@ -1,7 +1,6 @@
 const root = document.body;
 const themeToggle = document.querySelector('#theme-toggle');
 const printButton = document.querySelector('#print-page');
-const copyButton = document.querySelector('#copy-domain');
 
 const storedTheme = localStorage.getItem('samasara-theme');
 if (storedTheme === 'dark') root.classList.add('dark');
@@ -12,16 +11,6 @@ themeToggle.addEventListener('click', () => {
 });
 
 printButton.addEventListener('click', () => window.print());
-
-copyButton.addEventListener('click', async () => {
-  try {
-    await navigator.clipboard.writeText('https://samasara.site');
-    copyButton.querySelector('span').textContent = '已复制 samasara.site';
-    setTimeout(() => { copyButton.querySelector('span').textContent = '复制 samasara.site'; }, 1800);
-  } catch {
-    window.open('https://samasara.site', '_blank', 'noopener');
-  }
-});
 
 document.querySelector('#year').textContent = new Date().getFullYear();
 
