@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10231f" />
+    <meta name="description" content="Samasara 的个人简历——C++、Qt、实时数据处理与 Web 系统开发。" />
+    <title>Samasara · 软件研发工程师</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回顶部"><span class="brand-mark">S</span><span>SAMASARA<span class="brand-dot">.</span></span></a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#experience">经历</a>
+        <a href="#stack">能力</a>
+        <a href="#education">教育</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="切换主题" title="切换主题">◐</button>
+        <button class="print-button" id="print-page" type="button">打印简历 ↗</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-wrap">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> SOFTWARE ENGINEER · HEFEI</p>
+          <h1>把复杂的<br /><em>数据与设备</em><br />变成可靠的产品。</h1>
+          <p class="hero-intro">专注 C++ / Qt 桌面应用、实时数据处理与 Web 系统开发。喜欢从底层通信、算法移植一直做到清晰好用的界面。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#experience">查看我的经历 <span>↓</span></a>
+            <a class="button button-quiet" href="https://samasara.site" target="_blank" rel="noreferrer">samasara.site ↗</a>
+          </div>
+        </div>
+        <div class="hero-art reveal" aria-label="个人技术方向概览">
+          <div class="orb orb-large"></div><div class="orb orb-small"></div>
+          <div class="signal-card signal-card-top"><span class="signal-label">CURRENT FOCUS</span><strong>Real-time<br />systems</strong><span class="signal-arrow">↗</span></div>
+          <div class="signal-card signal-card-bottom"><span class="signal-label">BASED IN</span><strong>Hefei, CN</strong><span class="pulse"><i></i><i></i><i></i></span></div>
+          <div class="hero-grid"></div>
+          <div class="hero-stamp">C++<br /><span>QT · CUDA · WEB</span></div>
+        </div>
+      </section>
+
+      <section class="metrics section-wrap reveal" aria-label="工作关键词">
+        <div><strong>07<span>+</span></strong><small>年软件研发经验</small></div>
+        <div><strong>5<span>GHz</span></strong><small>雷达采样数据处理</small></div>
+        <div><strong>3<span>条</span></strong><small>跨平台技术路线</small></div>
+        <p>从硬件现场到<br />浏览器窗口</p>
+      </section>
+
+      <section id="experience" class="section-wrap content-section">
+        <div class="section-heading reveal"><p class="eyebrow"><span class="eyebrow-line"></span> 01 / EXPERIENCE</p><h2>一路把问题<br /><em>做深、做稳。</em></h2></div>
+        <div class="timeline">
+          <article class="job reveal">
+            <div class="job-date">2019.10 — 2022.03</div>
+            <div class="job-body"><div class="job-top"><h3>合肥蓝索科技有限公司</h3><span class="job-index">01</span></div><p class="job-role">上位机软件工程师</p><p>负责车载音响设备调音软件上位机与银行对讲设备出厂测试软件。参与 Qt/C++ 音效组件、USB 热插拔识别，以及 Windows 音视频测试能力建设。</p><div class="chips"><span>Qt / C++</span><span>QSS</span><span>USB / HID</span><span>串口通讯</span></div></div>
+          </article>
+          <article class="job reveal">
+            <div class="job-date">2022.04 — 2024.10</div>
+            <div class="job-body"><div class="job-top"><h3>安徽京淮健锐电子科技有限公司</h3><span class="job-index">02</span></div><p class="job-role">雷达采集软件工程师</p><p>负责雷达采集设备上位机，处理 5GHz 采样率数据；将数据处理算法移植到国产实时嵌入式系统“天脉”，打通 Socket 网络通讯链路。</p><div class="chips"><span>国产 Linux</span><span>实时嵌入式</span><span>数字信号处理</span><span>Socket</span></div></div>
+          </article>
+          <article class="job reveal">
+            <div class="job-date">2024.11 — 至今</div>
+            <div class="job-body"><div class="job-top"><h3>合肥国为电子科技有限公司</h3><span class="job-index">03</span></div><p class="job-role">软件研发工程师</p><p>参与天然地震监测系统网页版、大疆无人机负载实时数据回收与用户权限系统。负责 C++/Drogon 后端、Vue 前端、CUDA 定位算法移植，并开发 C#/WPF 桌面端与 VTK 三维显示。</p><div class="chips"><span>Vue</span><span>Drogon</span><span>PostgreSQL / MySQL / SQLite</span><span>CUDA</span><span>WPF / VTK</span></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="stack" class="section-wrap content-section stack-section">
+        <div class="section-heading reveal"><p class="eyebrow"><span class="eyebrow-line"></span> 02 / TOOLKIT</p><h2>横跨设备、<br /><em>算法与界面。</em></h2></div>
+        <div class="stack-grid">
+          <div class="stack-card stack-card-feature reveal"><span class="card-number">01</span><div class="stack-icon">⌘</div><h3>桌面端与设备</h3><p>Qt / C++、C# / WPF，擅长搭建稳定的工具型应用，处理 USB、HID、串口与 Socket 通信。</p><div class="mini-bars"><i style="--w:92%"></i><i style="--w:78%"></i><i style="--w:65%"></i></div></div>
+          <div class="stack-card reveal"><span class="card-number">02</span><div class="stack-icon">⌁</div><h3>实时数据与算法</h3><p>数字信号处理基础，雷达采样数据处理，实时嵌入式系统算法移植，CUDA 加速实践。</p><div class="tag-list"><span>DSP</span><span>CUDA</span><span>Realtime</span></div></div>
+          <div class="stack-card reveal"><span class="card-number">03</span><div class="stack-icon">◌</div><h3>Web 与可视化</h3><p>Vue 前端、Drogon 后端与主流数据库，结合 VTK 完成三维数据展示。</p><div class="tag-list"><span>Vue</span><span>Drogon</span><span>VTK</span></div></div>
+        </div>
+      </section>
+
+      <section id="education" class="section-wrap content-section education-section">
+        <div class="education-card reveal"><div><p class="eyebrow"><span class="eyebrow-line"></span> 03 / EDUCATION</p><h2>合肥工业大学</h2><p class="major">机械设计制造及其自动化</p></div><div class="edu-meta"><strong>2014.08 — 2018.07</strong><span>本科 · Hefei, China</span></div><div class="edu-seal">HFUT<span>工 · 大</span></div></div>
+      </section>
+
+      <section class="contact section-wrap reveal"><div class="contact-line"></div><p class="eyebrow"><span class="eyebrow-line"></span> LET'S CONNECT</p><h2>有复杂的系统<br /><em>要一起做出来吗？</em></h2><p class="contact-copy">欢迎通过我的个人域名了解更多，或在 GitHub Pages 部署后把这里替换成你的邮箱与社交链接。</p><button class="copy-button" id="copy-domain" type="button"><span>复制 samasara.site</span><b>↗</b></button></section>
+    </main>
+
+    <footer class="site-footer section-wrap"><span>© <span id="year"></span> SAMASARA</span><span>BUILT WITH CURIOSITY · HOSTED ON GITHUB PAGES</span><a href="#top">回到顶部 ↑</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
