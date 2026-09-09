@@ -13,3 +13,5 @@
 .copy-button{gap:6px}
 .copy-button b{display:inline-flex;align-items:center;margin-left:2px}
 @media(max-width:760px){.brand-name{font-size:14px}.brand-mark{width:32px;height:32px}.job h3{font-size:20px}.job-body>p:not(.job-role){font-size:14px}.stack-card h3{font-size:21px}.stack-card p{font-size:14px}}
+.metrics{grid-template-columns:repeat(2,1fr) 1.4fr}
+@media(max-width:760px){.metrics{grid-template-columns:repeat(2,1fr)}}
